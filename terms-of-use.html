@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Use for PraniQ — A quiet, private companion for your breath.">
+    <title>Terms of Use — PraniQ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ── Variables (Identical to Landing Page) ── */
+        :root {
+            --saffron: #FF9933;
+            --saffron-dark: #CC7A29;
+            --saffron-light: #FFBC6E;
+            --saffron-pale: #FFF4E3;
+            --forest: #1F6B2E;
+            --forest-mid: #4A8C3B;
+            --forest-pale: #EEF6EE;
+            --cream: #FFFCF7;
+            --warm-white: #FFF8EF;
+            --charcoal: #1A1410;
+            --dark: #2D2318;
+            --mid: #5C5248;
+            --light: #8C857E;
+            --line: #EBE3D8;
+            --radius: 12px;
+            --max: 1100px;
+        }
+
+        /* ── Reset ── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ── Typography ── */
+        h1,
+        h2,
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.2;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        /* ── Layout helpers ── */
+        .container {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* ══════════════════════════════════════
+       NAV
+    ══════════════════════════════════════ */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            background: rgba(255, 252, 247, 0.90);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(235, 227, 216, 0.7);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--charcoal);
+        }
+
+        .nav-brand svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        .nav-brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.45rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 22px;
+            background: var(--saffron);
+            color: white;
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .nav-download:hover {
+            background: var(--saffron-dark);
+        }
+
+        /* ══════════════════════════════════════
+       LEGAL CONTENT SPECIFIC STYLES
+    ══════════════════════════════════════ */
+        .page-header {
+            padding: 160px 0 64px;
+            background: var(--warm-white);
+            text-align: center;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .page-header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 16px;
+        }
+
+        .page-header p {
+            color: var(--mid);
+            font-size: 1.05rem;
+        }
+
+        .legal-content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 88px 28px;
+            background: var(--cream);
+        }
+
+        .legal-section {
+            margin-bottom: 48px;
+        }
+
+        .legal-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            color: var(--forest);
+        }
+
+        .legal-section p {
+            color: var(--mid);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .legal-section ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--mid);
+        }
+
+        .legal-section li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .legal-section strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .closing-statement {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            color: var(--saffron-dark);
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--line);
+        }
+
+        /* ══════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════ */
+        footer {
+            background: var(--charcoal);
+            padding: 48px 28px;
+        }
+
+        .footer-inner {
+            max-width: var(--max);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.83rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--saffron-light);
+        }
+
+        .footer-copy {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.28);
+        }
+
+        /* ══════════════════════════════════════
+           CONTACT MODAL
+        ══════════════════════════════════════ */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 500;
+            background: rgba(26, 20, 16, 0.62);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .modal-backdrop.open { opacity: 1; }
+        .modal-backdrop[hidden] { display: none; }
+
+        .modal-panel {
+            background: var(--cream);
+            border-radius: 18px;
+            padding: 48px 44px;
+            max-width: 520px;
+            width: 100%;
+            position: relative;
+            transform: translateY(24px);
+            transition: transform 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-backdrop.open .modal-panel { transform: translateY(0); }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 18px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--light);
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px 9px;
+            border-radius: 8px;
+            transition: all 0.15s;
+        }
+
+        .modal-close:hover { background: var(--line); color: var(--dark); }
+
+        .modal-panel h2 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: var(--charcoal);
+        }
+
+        .modal-sub {
+            color: var(--mid);
+            font-size: 0.9rem;
+            line-height: 1.65;
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            margin-bottom: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-row label {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--dark);
+            letter-spacing: 0.2px;
+        }
+
+        .form-row input,
+        .form-row textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1.5px solid var(--line);
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.94rem;
+            color: var(--dark);
+            background: white;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        .form-row input:focus,
+        .form-row textarea:focus { border-color: var(--saffron); }
+        .form-row textarea { resize: vertical; min-height: 118px; }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 6px;
+            padding: 14px;
+            background: var(--saffron);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .form-submit:hover:not(:disabled) { background: var(--saffron-dark); }
+        .form-submit:disabled { opacity: 0.68; cursor: not-allowed; }
+
+        .form-success,
+        .form-error { text-align: center; padding: 28px 12px; }
+
+        .success-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: var(--forest-pale);
+            color: var(--forest);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 18px;
+        }
+
+        .form-success p { color: var(--mid); line-height: 1.7; margin-bottom: 5px; }
+        .form-success p:first-of-type { color: var(--dark); font-weight: 500; font-size: 1.05rem; }
+        .form-error p { color: var(--mid); line-height: 1.7; }
+        .form-error a { color: var(--forest-mid); text-decoration: underline; }
+
+        @media (max-width: 560px) {
+            .modal-panel { padding: 36px 22px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <svg viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="nb" x1="120" y1="140" x2="904" y2="884" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#C57A12" />
+                            <stop offset="0.55" stop-color="#A9A93B" />
+                            <stop offset="1" stop-color="#1F6B2E" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="96" y="96" width="832" height="832" rx="170" ry="170" fill="url(#nb)" />
+                    <rect x="132" y="132" width="760" height="760" rx="150" ry="150" fill="none" stroke="#FFFFFF"
+                        stroke-opacity="0.2" stroke-width="10" />
+                    <circle cx="512" cy="360" r="128" fill="#F2C35A" />
+                    <path d="M512 520 C558 578 568 648 512 740 C456 648 466 578 512 520Z" fill="#8EC87A" />
+                    <path d="M435 562 C472 605 480 656 452 714 C402 674 390 620 435 562Z" fill="#7DC474" />
+                    <path d="M589 562 C634 620 622 674 572 714 C544 656 552 605 589 562Z" fill="#7DC474" />
+                    <path d="M344 604 C398 652 424 714 410 782 C326 762 288 698 344 604Z" fill="#6DBB68"
+                        opacity="0.9" />
+                    <path d="M680 604 C736 698 698 762 614 782 C600 714 626 652 680 604Z" fill="#6DBB68"
+                        opacity="0.9" />
+                </svg>
+                <span class="nav-brand-name">PraniQ</span>
+            </a>
+            <a href="index.html#download" class="nav-download">Download Free</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Terms of Use</h1>
+            <p>Last updated: 25 March 2026</p>
+        </div>
+    </header>
+
+    <main class="legal-content">
+
+        <div class="legal-section">
+            <p>Welcome to PraniQ. These Terms of Use govern your access to and use of the PraniQ mobile application (the
+                "App") and website. By downloading, accessing, or using PraniQ, you agree to be bound by these Terms. If
+                you do not agree to these Terms, please do not use the App.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>1. Medical & Health Disclaimer (Important)</h2>
+            <p><strong>PraniQ is not a medical device, nor does it provide medical advice, diagnosis, or
+                    treatment.</strong></p>
+            <p>The App is designed solely as a companion tool for general wellbeing, relaxation, and personal breathing
+                practice. Any information or guidance provided within the App is for informational purposes only.</p>
+            <ul>
+                <li>You should always consult a qualified healthcare professional or physician before beginning any new
+                    breathing practice, particularly if you are pregnant, have a history of respiratory issues,
+                    cardiovascular disease, high blood pressure, or any other medical condition.</li>
+                <li>If you experience dizziness, shortness of breath, pain, or discomfort while using the App, stop
+                    immediately and consult a healthcare provider.</li>
+                <li>You assume full responsibility for your use of the App and any outcomes related to your physical or
+                    mental health.</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. App Usage & Licensing</h2>
+            <p>Praniq Wellness Technologies Ltd grants you a personal, non-exclusive, non-transferable, and revocable
+                license to use the App for personal, non-commercial purposes, subject to these Terms.</p>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Reverse engineer, decompile, or disassemble the App.</li>
+                <li>Modify, distribute, or create derivative works based on the App.</li>
+                <li>Use the App in any way that violates applicable laws or regulations.</li>
+                <li>Use the App in a way that could disable, overburden, or impair the proper working of the App.</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Free Access & Subscriptions</h2>
+            <p>PraniQ is provided completely free of charge. There are no paywalls, subscriptions, or hidden fees
+                required to unlock features. We reserve the right to introduce optional features or services in the
+                future, but the core functionality as provided will remain accessible.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Privacy</h2>
+            <p>Your privacy is important to us. Our data collection and usage practices are outlined in our <a
+                    href="privacy-policy.html" style="color: var(--forest-mid); text-decoration: underline;">Privacy
+                    Policy</a>. By using the App, you acknowledge that you have read and understood our Privacy Policy.
+            </p>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Intellectual Property</h2>
+            <p>All content, design, text, graphics, interfaces, logos, and underlying source code within the App and
+                website are the property of Praniq Wellness Technologies Ltd or its licensors and are protected by
+                copyright, trademark, and other intellectual property laws. You may not use our intellectual property
+                without our express written consent.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, the App is provided "as is" and "as available" without
+                warranties of any kind, whether express or implied.</p>
+            <p>Praniq Wellness Technologies Ltd, its directors, employees, or agents shall not be liable for any direct,
+                indirect, incidental, consequential, or special damages arising out of or in any way connected with your
+                use of, or inability to use, the App, including any physical or psychological harm or injury resulting
+                from the breathing practices.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Changes to the Terms</h2>
+            <p>We may modify these Terms of Use at any time. If we make material changes, we will notify you by updating
+                the date at the top of this page or through an in-app notification. Your continued use of the App
+                following any changes constitutes your acceptance of the revised Terms.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales, without
+                regard to its conflict of law principles. Any disputes arising from these Terms or your use of the App
+                will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or concerns about these Terms of Use, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@praniq.app"
+                    style="color: var(--forest-mid); text-decoration: underline;">hello@praniq.app</a></p>
+        </div>
+
+        <div class="closing-statement">
+            Breathe well. Practise safely.
+        </div>
+
+    </main>
+
+    <!-- ══ CONTACT MODAL ══ -->
+    <div id="contact-modal" class="modal-backdrop" role="dialog" aria-modal="true"
+        aria-labelledby="contact-modal-title" hidden>
+        <div class="modal-panel">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close contact form">&times;</button>
+            <h2 id="contact-modal-title">Get in touch</h2>
+            <p class="modal-sub">Questions, feedback, or just want to say hello — we'd love to hear from you.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                <div class="form-row">
+                    <label for="cf-name">Your name</label>
+                    <input type="text" id="cf-name" name="name" required placeholder="Jane Smith"
+                        autocomplete="name">
+                </div>
+                <div class="form-row">
+                    <label for="cf-email">Email address</label>
+                    <input type="email" id="cf-email" name="email" required placeholder="jane@example.com"
+                        autocomplete="email">
+                </div>
+                <div class="form-row">
+                    <label for="cf-subject">Subject</label>
+                    <input type="text" id="cf-subject" name="subject" placeholder="What is this about?">
+                </div>
+                <div class="form-row">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" rows="5" required
+                        placeholder="Your message…"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send message</button>
+            </form>
+
+            <div id="form-success" class="form-success" hidden>
+                <div class="success-icon">✓</div>
+                <p>Thank you — message sent.</p>
+                <p>We'll get back to you at <strong>hello@praniq.app</strong> shortly.</p>
+            </div>
+            <div id="form-error" class="form-error" hidden>
+                <p>Something went wrong. Please email us directly at<br>
+                    <a href="mailto:hello@praniq.app">hello@praniq.app</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">PraniQ</div>
+            <div class="footer-links" role="navigation" aria-label="Footer navigation">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="#" class="open-contact">Contact</a>
+            </div>
+            <p class="footer-copy">
+                © 2026 Praniq Wellness Technologies Ltd · All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const modal = document.getElementById('contact-modal');
+            const form = document.getElementById('contact-form');
+            const closeBtn = document.getElementById('modal-close-btn');
+
+            function openModal() {
+                modal.removeAttribute('hidden');
+                requestAnimationFrame(function () { modal.classList.add('open'); });
+                document.body.style.overflow = 'hidden';
+                setTimeout(function () { closeBtn.focus(); }, 50);
+            }
+
+            function closeModal() {
+                modal.classList.remove('open');
+                setTimeout(function () {
+                    modal.setAttribute('hidden', '');
+                    document.body.style.overflow = '';
+                }, 260);
+            }
+
+            document.querySelectorAll('.open-contact').forEach(function (el) {
+                el.addEventListener('click', function (e) { e.preventDefault(); openModal(); });
+            });
+
+            closeBtn.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) closeModal();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
+            });
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = form.querySelector('.form-submit');
+                btn.textContent = 'Sending…';
+                btn.disabled = true;
+                try {
+                    const res = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (res.ok) {
+                        form.hidden = true;
+                        document.getElementById('form-success').hidden = false;
+                    } else {
+                        throw new Error('failed');
+                    }
+                } catch (_) {
+                    document.getElementById('form-error').hidden = false;
+                    btn.textContent = 'Send message';
+                    btn.disabled = false;
+                }
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
