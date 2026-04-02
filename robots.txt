@@ -1,0 +1,5 @@
+# https://praniq.app
+User-agent: *
+Allow: /
+
+Sitemap: https://praniq.app/sitemap.xml
