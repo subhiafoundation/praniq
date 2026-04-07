@@ -47,7 +47,7 @@
         "name": "PraniQ",
         "url": "https://praniq.app/",
         "sameAs": [
-          "https://apps.apple.com/app/praniq/id6729474636",
+          "https://apps.apple.com/gb/app/praniq/id6761636290",
           "https://play.google.com/store/apps/details?id=app.praniq"
         ]
       }
@@ -107,6 +107,24 @@
     img {
       display: block;
       max-width: 100%;
+    }
+
+    /* Vendor store badges are very wide; max-width:100% squishes them in flex layouts */
+    .nav-store-badges img,
+    .ribbon-bar-badges img,
+    .hero-store-badges img,
+    .download-buttons img {
+      max-width: none;
+      object-fit: contain;
+    }
+
+    /* Play badge: larger artwork only (transform does not affect layout / flex sizing) */
+    .nav-store-badge-gp img,
+    .ribbon-gp-wrap .ribbon-badge-img,
+    .hero-gp-pill .store-badge-img,
+    .download-gp-pill img {
+      transform: scale(1.12);
+      transform-origin: left center;
     }
 
     a {
@@ -215,12 +233,12 @@
       align-items: center;
       background: #fff;
       border-radius: 5px;
-      padding: 2px 6px;
+      padding: 1px 4px;
       line-height: 0;
     }
 
     .ribbon-gp-wrap .ribbon-badge-img {
-      height: 18px;
+      height: 22px;
     }
 
     @keyframes ribbonShimmer {
@@ -365,12 +383,12 @@
       align-items: center;
       background: #fff;
       border-radius: 6px;
-      padding: 3px 8px;
+      padding: 2px 6px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
     .nav-store-badge-gp img {
-      height: 28px;
+      height: 32px;
     }
 
     /* Hero store badges */
@@ -416,13 +434,13 @@
       align-items: center;
       background: rgba(255, 255, 255, 0.96);
       border-radius: 10px;
-      padding: 8px 12px;
+      padding: 6px 10px;
       line-height: 0;
       box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
     }
 
     .hero-gp-pill .store-badge-img {
-      height: 48px;
+      height: 54px;
     }
 
     .hero-store-note {
@@ -983,14 +1001,14 @@
       align-items: center;
       background: #fff;
       border-radius: 10px;
-      padding: 8px 12px;
+      padding: 6px 10px;
       line-height: 0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       border: 1px solid var(--line);
     }
 
     .download-gp-pill img {
-      height: 50px;
+      height: 56px;
     }
 
     .btn-dl-solid,
@@ -1139,7 +1157,7 @@
       }
 
       .nav-store-badge-gp img {
-        height: 24px;
+        height: 28px;
       }
     }
 
@@ -1171,7 +1189,7 @@
       }
 
       .hero-gp-pill .store-badge-img {
-        height: 42px;
+        height: 48px;
       }
 
       .download-store-badge img {
@@ -1179,7 +1197,7 @@
       }
 
       .download-gp-pill img {
-        height: 44px;
+        height: 50px;
       }
     }
 
@@ -1378,7 +1396,7 @@
     <span class="ribbon-msg">Free on App Store &amp; Google Play</span>
     <span class="ribbon-sep" aria-hidden="true">·</span>
     <span class="ribbon-bar-badges">
-      <a href="https://apps.apple.com/app/praniq/id6729474636" class="ribbon-badge-link" target="_blank"
+      <a href="https://apps.apple.com/gb/app/praniq/id6761636290" class="ribbon-badge-link" target="_blank"
         rel="noopener noreferrer" aria-label="Download PraniQ on the App Store">
         <img class="ribbon-badge-img"
           src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83"
@@ -1428,7 +1446,7 @@
       </div>
 
       <div class="nav-store-badges">
-        <a href="https://apps.apple.com/app/praniq/id6729474636" class="nav-store-badge" target="_blank"
+        <a href="https://apps.apple.com/gb/app/praniq/id6761636290" class="nav-store-badge" target="_blank"
           rel="noopener noreferrer" aria-label="Download PraniQ on the App Store">
           <img
             src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
@@ -1464,7 +1482,7 @@
       <div class="hero-coming-soon">
         <div class="hero-store-badges">
           <div class="hero-store-badge-row">
-            <a href="https://apps.apple.com/app/praniq/id6729474636" class="store-badge-link" target="_blank"
+            <a href="https://apps.apple.com/gb/app/praniq/id6761636290" class="store-badge-link" target="_blank"
               rel="noopener noreferrer" aria-label="Download PraniQ on the App Store">
               <img class="store-badge-img"
                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83"
@@ -1669,7 +1687,7 @@
     <p class="reveal" style="position:relative;">Download free on the App Store and Google Play — same app, both
       platforms.</p>
     <div class="download-buttons reveal">
-      <a href="https://apps.apple.com/app/praniq/id6729474636" class="download-store-badge" target="_blank"
+      <a href="https://apps.apple.com/gb/app/praniq/id6761636290" class="download-store-badge" target="_blank"
         rel="noopener noreferrer" aria-label="Download PraniQ on the App Store">
         <img
           src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
